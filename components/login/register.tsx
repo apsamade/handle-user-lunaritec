@@ -58,7 +58,7 @@ export const RegisterForm = () => {
   }
   return (
     <form
-      className='p-3 bg-white text-black flex flex-col gap-3'
+      className='p-3 bg-white text-black flex flex-col gap-3 rounded-md max-w-3xl w-full mx-auto'
       onSubmit={handlesubmit}
     >
       <input onChange={(e) => { setEmail(e.target.value) }} type="email" name="email" id="email" className="p-2 border border-gray-300" placeholder="Email" />

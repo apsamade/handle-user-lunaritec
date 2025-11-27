@@ -1,7 +1,7 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Provider } from "@/components/provider";
-import "./globals.css";
 import { Navbar } from "@/components/nav";
 
 const montserrat = Montserrat({
