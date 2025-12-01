@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <header className="min-h-[calc(100vh-6rem)] rounded-lg m-4 shadow-xl flex items-start flex-wrap bg-linear-to-br from-gray-700 via-black to-gray-800 text-white p-8 pt-16">
       {links.map((link, index) => (
-        <div key={index} className="p-4 m-4 bg-white rounded-md text-black basis-[300px] grow min-h-[160px]">
+        <div key={index} className="p-4 m-4 bg-white rounded-md text-black basis-[300px] grow min-h-40">
           <h2 className="text-xl">{link.description}</h2>
           <hr className="border-black/25 mt-1" />
           {link.liens.map((lien, index) => (
@@ -62,7 +62,7 @@ export default function Home() {
               <Link
                 key={index}
                 href={lien.href}
-                className="text-sm mt-6 flex items-center gap-2 hover:gap-12 duration-300"
+                className="text-sm my-3 flex items-center gap-2 hover:gap-12 duration-300"
               >
                 {lien.label}
                 <IoIosArrowForward className="relative bottom-px" />
