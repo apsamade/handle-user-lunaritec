@@ -58,7 +58,7 @@ export default function Home() {
           <h2 className="text-xl">{link.description}</h2>
           <hr className="border-black/25 mt-1" />
           {link.liens.map((lien, index) => (
-            <>
+            <div key={index}>
               <Link
                 key={index}
                 href={lien.href}
@@ -70,7 +70,7 @@ export default function Home() {
               {(index < link.liens.length - 1) &&
                 <hr className="border-black/25" />              
               }
-            </>
+            </div>
           ))}
         </div>
       ))}
